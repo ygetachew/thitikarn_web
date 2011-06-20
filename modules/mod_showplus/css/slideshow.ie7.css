@@ -1,0 +1,18 @@
+.showplus-controller {
+background: url(controller.png) no-repeat;
+}
+.showplus-controller li.first a {
+background-image: url(controller-first.gif);
+}
+.showplus-controller li.last a {
+background-image: url(controller-last.gif);
+}
+.showplus-controller li.next a {
+background-image: url(controller-next.gif);
+}
+.showplus-controller li.pause a {
+background-image: url(controller-pause.gif);
+}
+.showplus-controller li.prev a {
+background-image: url(controller-prev.gif);
+}

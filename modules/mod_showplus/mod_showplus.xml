@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="module" method="upgrade" client="site">
+	<name>showplus</name>
+	<author>Levente Hunyadi</author>
+	<creationDate>Mar 18, 2011</creationDate>
+	<copyright>© 2011 Levente Hunyadi. All rights reserved.</copyright>
+	<license>GNU/GPL</license>
+	<authorEmail>hunyadi@gmail.com</authorEmail>
+	<authorUrl>http://hunyadi.info.hu/projects/showplus</authorUrl>
+	<version>1.0.0.5</version>
+	<downloadUrl>http://joomlacode.org/gf/project/showplus/frs/</downloadUrl>
+	<description>SHOWPLUS_DESCRIPTION</description>
+	<files>
+		<filename module="mod_showplus">mod_showplus.php</filename>
+		<folder>css</folder>
+		<folder>fields</folder>
+		<folder>js</folder>
+		<folder>tmpl</folder>
+		<filename>index.html</filename>
+		<filename>exception.php</filename>
+		<filename>helper.php</filename>
+		<filename>librarian.php</filename>
+		<filename>params.php</filename>
+		<filename>thumbs.php</filename>
+		<filename>utility.php</filename>
+	</files>
+	<languages folder="language">
+		<language tag="en-GB">en-GB.mod_showplus.ini</language>
+	</languages>
+	<params addpath="/modules/mod_showplus/fields">
+		<param name="folder" type="text" default="images/stories/fruit" label="SHOWPLUS_FOLDER" description="SHOWPLUS_FOLDER_DESCRIPTION" />
+		<param name="width" type="text" default="600" label="SHOWPLUS_WIDTH" description="SHOWPLUS_WIDTH_DESCRIPTION" />
+		<param name="height" type="text" default="400" label="SHOWPLUS_HEIGHT" description="SHOWPLUS_HEIGHT_DESCRIPTION" />
+		<param name="alignment" type="list" default="center" label="SHOWPLUS_ALIGNMENT" description="SHOWPLUS_ALIGNMENT_DESCRIPTION">
+			<option value="before-clear">SHOWPLUS_ALIGNMENT_BEFORE</option>
+			<option value="before-float">SHOWPLUS_ALIGNMENT_BEFORE_FLOAT</option>
+			<option value="center">SHOWPLUS_ALIGNMENT_CENTER</option>
+			<option value="after-clear">SHOWPLUS_ALIGNMENT_AFTER</option>
+			<option value="after-float">SHOWPLUS_ALIGNMENT_AFTER_FLOAT</option>
+		</param>
+		<param name="orientation" type="radio" default="horizontal" label="SHOWPLUS_ORIENTATION" description="SHOWPLUS_ORIENTATION_DESCRIPTION">
+			<option value="disabled">SHOWPLUS_ORIENTATION_DISABLED</option>
+			<option value="horizontal">SHOWPLUS_ORIENTATION_HORIZONTAL</option>
+			<option value="vertical">SHOWPLUS_ORIENTATION_VERTICAL</option>
+		</param>
+		<param name="buttons" type="radio" default="1" label="SHOWPLUS_BUTTONS" description="SHOWPLUS_BUTTONS_DESCRIPTION">
+			<option value="1">Show</option>
+			<option value="0">Hide</option>
+		</param>
+		<param name="captions" type="radio" default="1" label="SHOWPLUS_CAPTIONS" description="SHOWPLUS_CAPTIONS_DESCRIPTION">
+			<option value="1">Show</option>
+			<option value="0">Hide</option>
+		</param>
+		<param name="defcaption" type="textarea" cols="40" label="SHOWPLUS_CAPTION_DEFAULT" description="SHOWPLUS_CAPTION_DEFAULT_DESCRIPTION" />
+		<param name="deflink" type="textarea" cols="40" label="SHOWPLUS_LINK_DEFAULT" description="SHOWPLUS_LINK_DEFAULT_DESCRIPTION" />
+		<param name="delay" type="text" default="3000" label="SHOWPLUS_DELAY" description="SHOWPLUS_DELAY_DESCRIPTION" />
+		<param name="duration" type="text" default="800" label="SHOWPLUS_DURATION" description="SHOWPLUS_DURATION_DESCRIPTION" />
+		<param name="transition" type="list" default="fade" label="SHOWPLUS_TRANSITION" description="SHOWPLUS_TRANSITION_DESCRIPTION">
+			<option value="fade">SHOWPLUS_TRANSITION_FADE</option>
+			<option value="flash">SHOWPLUS_TRANSITION_FLASH</option>
+			<option value="fold">SHOWPLUS_TRANSITION_FOLD</option>
+			<option value="kenburns">SHOWPLUS_TRANSITION_KENBURNS</option>
+			<option value="push">SHOWPLUS_TRANSITION_PUSH</option>
+		</param>
+		<param name="transition_easing" type="list" default="linear" label="SHOWPLUS_TRANSITION_EASING" description="SHOWPLUS_TRANSITION_EASING_DESCRIPTION">
+			<option value="linear">SHOWPLUS_TRANSITION_EASING_LINEAR</option>
+			<option value="quad">SHOWPLUS_TRANSITION_EASING_QUAD</option>
+			<option value="cubic">SHOWPLUS_TRANSITION_EASING_CUBIC</option>
+			<option value="quart">SHOWPLUS_TRANSITION_EASING_QUART</option>
+			<option value="quint">SHOWPLUS_TRANSITION_EASING_QUINT</option>
+			<option value="expo">SHOWPLUS_TRANSITION_EASING_EXPO</option>
+			<option value="circ">SHOWPLUS_TRANSITION_EASING_CIRC</option>
+			<option value="sine">SHOWPLUS_TRANSITION_EASING_SINE</option>
+			<option value="back">SHOWPLUS_TRANSITION_EASING_BACK</option>
+			<option value="bounce">SHOWPLUS_TRANSITION_EASING_BOUNCE</option>
+			<option value="elastic">SHOWPLUS_TRANSITION_EASING_ELASTIC</option>
+		</param>
+		<param name="transition_pan" type="text" default="100" label="SHOWPLUS_TRANSITION_PAN" description="SHOWPLUS_TRANSITION_PAN_DESCRIPTION" />
+		<param name="transition_zoom" type="text" default="50" label="SHOWPLUS_TRANSITION_ZOOM" description="SHOWPLUS_TRANSITION_ZOOM_DESCRIPTION" />
+		<param name="margin" type="text" default="" label="SHOWPLUS_CSS_MARGIN" description="SHOWPLUS_CSS_MARGIN_DESCRIPTION" />
+		<param name="border_style" type="list" default="" label="SHOWPLUS_CSS_BORDER_STYLE" description="SHOWPLUS_CSS_BORDER_STYLE_DESCRIPTION">
+			<option value="">SHOWPLUS_CSS_BORDER_DEFAULT</option>
+			<option value="none">SHOWPLUS_CSS_BORDER_NONE</option>
+			<option value="dotted">SHOWPLUS_CSS_BORDER_DOTTED</option>
+			<option value="dashed">SHOWPLUS_CSS_BORDER_DASHED</option>
+			<option value="solid">SHOWPLUS_CSS_BORDER_SOLID</option>
+			<option value="double">SHOWPLUS_CSS_BORDER_DOUBLE</option>
+			<option value="groove">SHOWPLUS_CSS_BORDER_GROOVE</option>
+			<option value="ridge">SHOWPLUS_CSS_BORDER_RIDGE</option>
+			<option value="inset">SHOWPLUS_CSS_BORDER_INSET</option>
+			<option value="outset">SHOWPLUS_CSS_BORDER_OUTSET</option>
+		</param>
+		<param name="border_width" type="text" default="" label="SHOWPLUS_CSS_BORDER_WIDTH" description="SHOWPLUS_CSS_BORDER_WIDTH_DESCRIPTION" />
+		<param name="border_color" type="color" default="" label="SHOWPLUS_CSS_BORDER_COLOR" description="SHOWPLUS_CSS_BORDER_COLOR_DESCRIPTION" />
+		<param name="padding" type="text" default="" label="SHOWPLUS_CSS_PADDING" description="SHOWPLUS_CSS_PADDING_DESCRIPTION" />
+		<param name="thumb_width" type="text" default="60" label="SHOWPLUS_THUMB_WIDTH" description="SHOWPLUS_THUMB_WIDTH_DESCRIPTION" />
+		<param name="thumb_height" type="text" default="40" label="SHOWPLUS_THUMB_HEIGHT" description="SHOWPLUS_THUMB_HEIGHT_DESCRIPTION" />
+		<!--
+		<param name="thumb_color_active" type="color" default="" label="SHOWPLUS_THUMB_COLOR_ACTIVE" description="SHOWPLUS_THUMB_COLOR_ACTIVE_DESCRIPTION" />
+		<param name="thumb_color_hover" type="color" default="" label="SHOWPLUS_THUMB_COLOR_HOVER" description="SHOWPLUS_THUMB_COLOR_HOVER_DESCRIPTION" />
+		-->
+	</params>
+	<params group="advanced" addpath="/modules/mod_showplus/fields">
+		<param name="thumb_cache" type="radio" default="1" label="SHOWPLUS_THUMB_CACHE" description="SHOWPLUS_THUMB_CACHE_DESCRIPTION">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="thumb_folder" type="text" default="thumbs" label="SHOWPLUS_THUMB_FOLDER" description="SHOWPLUS_THUMB_FOLDER_DESCRIPTION" />
+		<param name="thumb_quality" type="text" default="85" label="SHOWPLUS_THUMB_QUALITY" description="SHOWPLUS_THUMB_QUALITY_DESCRIPTION" />
+		<param name="labels" type="text" default="labels" label="SHOWPLUS_LABELS" description="SHOWPLUS_LABELS_DESCRIPTION" />
+		<param name="labels_multilingual" type="radio" default="0" label="SHOWPLUS_LABELS_MULTILINGUAL" description="SHOWPLUS_LABELS_MULTILINGUAL_DESCRIPTION">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<!--
+		<param name="labels_update" type="radio" default="1" label="SHOWPLUS_LABELS_UPDATE" description="SHOWPLUS_LABELS_UPDATE_DESCRIPTION">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		-->
+		<param name="sort_criterion" type="list" default="labels-filename" label="SHOWPLUS_SORT_CRITERION" description="SHOWPLUS_SORT_CRITERION_DESCRIPTION">
+			<option value="labels-filename">SHOWPLUS_SORT_CRITERION_LABELS_FILENAME</option>
+			<option value="labels-mtime">SHOWPLUS_SORT_CRITERION_LABELS_MTIME</option>
+			<option value="filename">SHOWPLUS_SORT_CRITERION_FILENAME</option>
+			<option value="mtime">SHOWPLUS_SORT_CRITERION_MTIME</option>
+			<option value="random">SHOWPLUS_SORT_CRITERION_RANDOM</option>
+			<option value="randomlabels">SHOWPLUS_SORT_CRITERION_RANDOMLABELS</option>
+		</param>
+		<param name="sort_order" type="list" default="0" label="SHOWPLUS_SORT_ORDER" description="SHOWPLUS_SORT_ORDER_DESCRIPTION">
+			<option value="0">SHOWPLUS_SORT_ORDER_ASCENDING</option>
+			<option value="1">SHOWPLUS_SORT_ORDER_DESCENDING</option>
+		</param>
+		<param name="library" type="imagelibrarylist" default="default" label="SHOWPLUS_LIBRARY" description="SHOWPLUS_LIBRARY_DESCRIPTION">
+			<option value="none">SHOWPLUS_LIBRARY_NONE</option>
+			<option value="default">SHOWPLUS_LIBRARY_DEFAULT</option>
+			<option value="gd">SHOWPLUS_LIBRARY_GD</option>
+			<option value="imagick">SHOWPLUS_LIBRARY_IMAGEMAGICK</option>
+		</param>
+		<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+		<param name="debug" type="radio" default="0" label="SHOWPLUS_DEBUG" description="SHOWPLUS_DEBUG_DESCRIPTION">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+	</params>
+</install>
