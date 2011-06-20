@@ -84,13 +84,26 @@ div#logo {
 	left: 0;
 	top: 0;
 	float: left;
-	width: 298px;
-	height: 75px;
-	background: url(../images/mw_joomla_logo.png) 0 0 no-repeat;
-	margin-left: 30px;
-	margin-top: 25px;
-}
+        width: 100px;
+        height: 100px;
+	/*background: url(../images/mw_joomla_logo.png) 0 0 no-repeat;
+        background: url(/images/logo_only_64h.png) 0 0 no-repeat;     */
+        background: url(/images/logo_only_100.png) 0 0 no-repeat;     
+        z-index: 10;
+	margin-left: 20px;
+	margin-top: 20px;
 
+}
+div#logo_text{
+          float: left;
+      font-size: 42px;
+       font-weight: bold;
+       left: 120px;
+       position: absolute;
+    text-transform: uppercase;
+    top: 64px;
+	
+}
 div#newsflash {
 	width: auto;
 	margin-left: 350px;
