@@ -817,3 +817,20 @@ td.key {
 #component-contact table td {
 	padding: 2px 0;
 }
+
+/*show plus */
+.showplus_full{
+    width:100%;
+    display:none;
+}
+#showplus_images_thitikarn{
+   width:100%;
+   float:left;
+   clear:both;
+   margin-left:20px;
+   
+ 
+}
+.showplus{
+   display:none;
+}
