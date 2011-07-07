@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="template">
+	<name>siteground-j15-172</name>
+	<version>1.0.0</version>
+	<creationDate>09/2010</creationDate>
+	<author>Siteground</author>
+	<authorEmail>templates@siteground.com</authorEmail>
+	<authorUrl>http://www.siteground.com</authorUrl>
+	<copyright>Siteground</copyright>
+	<license>Siteground License</license>
+	<description>TEMPLATE_DESCRIPTION</description>
+	<files>
+		<filename>index.php</filename>
+		<filename>templateDetails.xml</filename>
+		<filename>template_thumbnail.png</filename>
+		<filename>params.ini</filename>
+		<filename>styleloader.php</filename>
+		<filename>utils.php</filename>
+		<filename>templates.php</filename>
+		
+		<filename>images/sg_background.gif</filename>
+		<filename>images/but.gif</filename>
+		<filename>images/but_hover.gif</filename>
+		<filename>images/menu_arrow.gif</filename>
+		<filename>images/headerimg.jpg</filename>
+		<filename>images/indent1.png</filename>
+		<filename>images/indent2.png</filename>
+		<filename>images/indent3.png</filename>
+		<filename>images/indent4.png</filename>
+		<filename>images/inputbox.png</filename>
+		<filename>images/page_bg.png</filename>
+		<filename>images/box_h3.png</filename>
+		<filename>images/search_btn.png</filename>
+		<filename>images/box_b.png</filename>
+		<filename>images/t_menu_btn.png</filename>
+		<filename>images/t_menu_btn_l.png</filename>
+		<filename>images/footer.png</filename>
+		<filename>images/footer_bg.png</filename>
+		
+		
+		<filename>css/index.html</filename>
+		<filename>css/template.css</filename>
+		<filename>css/editor.css</filename>
+	</files>
+	<positions>
+		<position>user4</position>            
+		<position>user3</position>            
+		<position>breadcrumb</position>            
+		<position>user2</position>            
+		<position>left</position>                  
+		<position>right</position>            
+		<position>debug</position>       
+	</positions>
+	<languages>
+		<language tag="en-GB">en-GB.tpl_siteground-j15-172.ini</language>
+	</languages>
+	<administration>
+	    <languages folder="admin">
+			<language tag="en-GB">en-GB.tpl_siteground-j15-172.ini</language>
+		</languages>
+    </administration>
+</install>
